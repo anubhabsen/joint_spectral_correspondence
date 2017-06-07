@@ -27,3 +27,11 @@ for i = 1:N
     D(i, i) = sum;
 end
 
+% I = forgot how to incidence matrix
+
+L = I - D^(-1/2) * weighted_graph * D^(-1/2);
+
+% todo
+
+L * U = lambda * U;
+U_new = D^(-1/2) * U;
